@@ -1,0 +1,5 @@
+/*----------- CSS :: ARABIC ---------*/
+*{
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}

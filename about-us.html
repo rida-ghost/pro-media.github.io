@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--begin :: GLOBAL CSS all PAGES-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ar.style.css">
+    <!--end :: GLOBAL CSS ALL PAGES-->
+    <style>
+        .text-stroke{
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+        }
+        .text-stroke-yellow {
+            -webkit-text-stroke-color: #F9C200;
+        }
+        @keyframes float {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px);
+            }
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+                transform: translatey(-20px);
+            }
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+                transform: translatey(0px);
+            }
+        }
+        .header-section.header-section-design::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 100%;
+            filter: blur(200px);
+            right: -200px;
+            bottom: -200px;
+            background-color: #f16232;
+            z-index: 1;
+        }
+        .header-section.header-section-design::after{
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 100%;
+            filter: blur(200px);
+            left: -200px;
+            bottom: -200px;
+            background-color: #f16232;
+            z-index: 1;     
+        }
+        svg {
+            fill: currentColor;
+            height: auto;
+            max-width: 66vmin;
+            transform-origin: center;
+            width: 66%;
+            font-size: .8rem!important;
+            animation: rotate 2s infinite;
+        }
+        @keyframes rotate {
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+        <!--begin :: (Navbar)-->
+        <nav class="navbar custom-navbar navbar-expand-lg bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo-light.png" alt="" width="90"srcset="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: hsl( 15 , 87% , 57% )">
+                    <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+              <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" aria-current="page" href="index.html">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" href="index.html#services">خدماتنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" href="design.html">التصميم</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" href="developpement.html">تطوير المواقع</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative active" href="about-us.html">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link position-relative" href="contact.html">اتصل بنا</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <!--end :: (Navbar)-->
+    <section class="aboutus-section bg-dark text-white">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 p-0">
+                    <div class="about-video set-bg" data-setbg="img/about-me.jpg" style="background-image: url(&quot;img/about-me.jpg&quot;);">
+                        <!-- <a href="https://www.youtube.com/watch?v=EzKkl64rRbM" class="play-btn video-popup"><i -->
+                                <!-- class="fa fa-caret-right"></i></a> -->
+                            <div class="image-container d-flex align-items-center">
+                                <img src="images/about.png" width="100%" height="auto" class="d-block" alt="" srcset="">
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <span>معلومات عنا</span>
+                            <h2>ما قمنا به</h2>
+                        </div>
+                        <div class="at-desc">
+                            <p>"نرحب بك في وكالتنا المتخصصة في إنشاء المواقع الإلكترونية والتصميم الإبداعي. نقدم حلولًا فريدة ومبتكرة، مع التركيز على تحقيق رؤى العملاء. فريقنا المحترف يضمن تصميمًا جذابًا وتجربة مستخدم متميزة. اكتشف معنا الإمكانيات اللا حدود لتميز علامتك التجارية."</p>
+                        </div>
+                        <div class="d-flex text-white my-4 align-items-center" style="line-height: 1.4">
+                            <div style="color: #FFD700"><span><i class="fa-solid fa-check"></i></span></div>
+                            <div style="font-size: 10px;" class="mx-2">
+                              <div><span style="color:#CD7F32 " class="m-1"><i class="fa-solid fa-check"></i></i></span>المواقع الالكترونية</div>
+                              <div><span style="color:#CD7F32 " class="m-1"><i class="fa-solid fa-check"></i></span>التصميم</div>
+                              <div><span style="color:#CD7F32" class="m-1"><i class="fa-solid fa-check"></i></span>التعديل و المونتاج</div>
+                            </div>
+                            <div style="font-size: 10px;">
+                              <div><span style="color:#CD7F32 " class="m-1"><i class="fa-solid fa-check"></i></i></span>المراجعة و التدقيق اللغوي</div>
+                              <div><span style="color:#CD7F32" class="m-1"><i class="fa-solid fa-check"></i></span>التعليق الصوتي</div>
+                              <div><span style="color:#CD7F32" class="m-1"><i class="fa-solid fa-check"></i></span>التصوير الفوتوغرافي</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--begin :: Services-->
+        <div class="solution-section text-center py-3">
+            <span class="d-block text-warning text-center fw-bold">لماذا نحن</span>
+            <h3 class="h1 fw-bolder text-center mb-4">اكتشف خدماتنا المتميزة</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-6">
+                        <div class="solution-item">
+                            <div class="image-container w-75 mx-auto">
+                                <img src="images/choose-1.png" class="w-100 h-auto" alt="" srcset="">
+                            </div>
+                            <h3 class="h4 fw-bold mt-3">خدمة المونتاج و التعديل</h3>
+                            <p class="text-muted rem-8">"مونتاج محترف وتعديل إبداعي لتحويل رؤيتك إلى واقع!"</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="solution-item">
+                            <div class="image-container w-75 mx-auto">
+                                <img src="images/choose-2.png" class="w-100 h-auto" alt="" srcset="">
+                            </div>
+                            <h3 class="h4 fw-bold mt-3">خدمة انشاء المواقع الالكترونية</h3>
+                            <p class="text-muted rem-8">نركز على الجودة مقابل السعر مع مواكبة و عمل احترافي للضمان وجود متميز للعملكم في الانترنت</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-6">
+                        <div class="solution-item">
+                            <div class="image-container w-75 mx-auto">
+                                <img src="images/choose-3.png" class="w-100 h-auto" alt="" srcset="">
+                            </div>
+                            <h3 class="h4 fw-bold mt-3">خدمة التصوير الفوتوغرافي</h3>
+                            <p class="text-muted rem-8">تصوير استثنائي يحكي قصتك، جودة فائقة، تجربة تصوير متميزة</p>
+                        </div>
+                    </div> 
+    
+                </div>
+            </div>
+        </div>
+        <!--end :: Servives-->
+    <!--begin :: footer-->
+    <footer class="footer-section p-1">
+        <div class="footer-inner bg-dark rounded pt-4">
+            <div class="container text-burned-gray rem-8">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500" data-aos-once="true">
+                            <!-- <div class="widget-logo" style="width:50%;">
+                                <a href="index.html"><img src="images/promakes-logo.png" alt="image" class="w-100 h-auto"></a>
+                            </div> -->
+                            <p >Lorem ipsum dolor sit amet consetetur sadi scing elitr sed diam nonumy.</p>
+
+                            <ul class="widget-social list-unstyled d-flex rem-9">
+                                <li class="me-1">
+                                    <a href="https://www.facebook.com/EnvyTheme" class="rounded-circle d-flex align-items-center justify-content-center text-blue-sky" target="_blank">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <li class="me-1">
+                                    <a href="https://twitter.com/?lang=en" target="_blank" class="rounded-circle d-flex align-items-center justify-content-center text-blue-sky">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li class="me-1">
+                                    <a href="https://www.youtube.com/" target="_blank" class="rounded-circle d-flex align-items-center justify-content-center text-blue-sky">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </li>
+
+                                
+                                <li>
+                                    <a href="https://www.instagram.com/" target="_blank" class="rounded-circle d-flex align-items-center justify-content-center text-blue-sky">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="single-footer-widget ps-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="60" data-aos-duration="600" data-aos-once="true">
+                            <h3 class="fw-bold text-white mb-3">خدماتنا</h3>
+
+                            <ul class="quick-links list-unstyled ps-2">
+                                <li class="mb-2"><a href="developpement.html" class="text-burned-gray">تطوير المواقع الالكترونية</a></li>
+                                <!-- <li class="mb-2"><a href="services-style-2.html" class="text-burned-gray">التصوير الفوتوغرافي</a></li> -->
+                                <li class="mb-2"><a href="design.html" class="text-burned-gray">التصميم و المونتاج</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="single-footer-widget ps-5 aos-init aos-animate" data-aos="fade-up" data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
+                            <h3 class="fw-bold text-white mb-3">اخر</h3>
+
+                            <ul class="quick-links list-unstyled ps-2">
+                                <li class="mb-2"><a href="about-us.html" class="text-burned-gray">من نحن</a></li>
+                                <li class="mb-2"><a href="contact.html" class="text-burned-gray">اتصل بنا</a></li>
+                                <!-- <li class="mb-2"><a href="faq.html" class="text-burned-gray">شروط الخدمة</a></li> -->
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="single-footer-widget aos-init aos-animate" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
+                            <h3>Subscribe</h3>
+
+                            <form class="newsletter-form" data-bs-toggle="validator" novalidate="true">
+                                <input type="email" class="input-newsletter rounded p-2  px-1 d-block w-100" placeholder="Enter your email" name="EMAIL" required="" autocomplete="off">
+        
+                                <button type="submit" class="default-btn disabled px-3 py-2 rounded w-100 mt-2" style="pointer-events: all; cursor: pointer;">Subscribe</button>
+                                <div id="validator-newsletter" class="form-result"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright-inner-container py-3">
+                <p class="m-0 p-0 text-center text-white rem-9">
+                    Copyright @<script>document.write(new Date().getFullYear())</script>  All Rights Reserved by
+                    <a href="https://promales.com/" class="text-sky-blue" target="_blank"> pro-media</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--end :: footer-->
+    <!---Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const swiper = new Swiper('.designSwiper', {
+            slidesPerView: 2,
+            // slidesPerColumn: 2,
+            spaceBetween: 30,
+            loop:true,
+            autoplay:{
+                delay : 1500,
+            },
+            loop:true,
+
+            breakpoints: {
+                650:{
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+</body>
+</html>
